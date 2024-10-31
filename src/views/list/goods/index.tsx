@@ -127,23 +127,7 @@ export function Component() {
           <Paragraph>
             本老虎机游戏使用以下六种符号：
             <Text code>["🎉", "🌟", "🎁", "💎", "🍀", "🍬"]</Text>
-            {' '}
-            对应的数字分别为
-            {' '}
-            <Text code>[0, 1, 2, 3, 4, 5]</Text>
             。当每次转动结束后，槽内会显示一串符号，依据这些符号的组合来计算玩家的奖励积分。具体规则如下：
-          </Paragraph>
-
-          <Title level={3}>符号与数字对应关系</Title>
-          <Paragraph>
-            <ul>
-              <li>🎉 - 0</li>
-              <li>🌟 - 1</li>
-              <li>🎁 - 2</li>
-              <li>💎 - 3</li>
-              <li>🍀 - 4</li>
-              <li>🍬 - 5</li>
-            </ul>
           </Paragraph>
 
           <Title level={3}>奖励规则</Title>
