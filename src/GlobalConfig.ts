@@ -50,32 +50,32 @@ const sysGlobalConfig: IGlobalConfig = {
   // 标签栏
   tabbar: {
     // 是否开启
-    enable: true,
+    enable: false,
   },
   // 工具栏
   toolbar: {
     // 是否开启
     enable: true,
     // 是否开启全屏
-    enableFullscreen: true,
+    enableFullscreen: false,
     // 是否开启颜色系统（明亮暗黑模式）
-    enableColorScheme: true,
+    enableColorScheme: false,
     // 是否开启换肤
-    enableChangeTheme: true,
+    enableChangeTheme: false,
     // 是否开启国际化
-    enableI18n: true,
+    enableI18n: false,
     // 是否开启侧边栏展开收起按钮
-    enableSidebarCollapse: true,
+    enableSidebarCollapse: false,
     // 是否开启面包屑导航
     enableBreadcrumb: true,
     // 是否开启页面刷新
-    enablePageReload: true,
+    enablePageReload: false,
     // 是否开启菜单搜索
-    enableMenuSearch: true,
+    enableMenuSearch: false,
     // 是否开启框架元素大小切换（改变elementui的大小和上方elementSize的作用一样）
     enableElementSize: true,
     // 是否开启应用配置（建议在生产环境关闭）
-    enableAppSetting: true,
+    enableAppSetting: false,
     // 是否开启通知中心
     enableNotification: false,
   },

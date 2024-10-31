@@ -139,7 +139,7 @@ export function Component() {
             )
           }
 
-          <main className={classNames('main-box flex flex-1 flex-col overflow-x-hidden bg-[#f5f5f5] dark:bg-[#141414]', { 'overflow-auto': navFixed })}>
+          <main className={classNames('box-border px-12px py-12px main-box flex flex-1 flex-col overflow-x-hidden bg-[#f5f5f5] dark:bg-[#141414]', { 'overflow-auto': navFixed })}>
             <div className={actionbarClass}>
               { showTabbar && <Tabbar /> }
               { showToolbar && <Toolbar /> }

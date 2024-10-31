@@ -5,30 +5,22 @@ import type { RouteObject } from 'react-router-dom'
 
 export default {
   meta: {
-    title: 'route.list.root',
+    title: '娱乐场',
     icon: 'ant-design:hdd-filled',
   },
   children: [
     {
-      path: '/list/user',
-      // element: <Suspense><UserList /></Suspense>,
-      lazy: () => import('@/views/list/user'),
+      path: '/list/roll',
+      lazy: () => import('@/views/list/roll'),
       meta: {
-        title: 'route.list.page1',
-        auth: 'user.read',
+        title: '转盘',
       },
     },
     {
-      path: '/list/user/detail',
-      // element: <Suspense><UserDetail /></Suspense>,
-      lazy: () => import('@/views/list/user/detail'),
+      path: '/list/nine-grid',
+      lazy: () => import('@/views/nine-grid'),
       meta: {
-        title: 'route.list.detail1',
-        hideInMenu: true,
-        hideInSearch: true,
-        activeMenu: '/list/user',
-        mergeTabbarPath: '/list/user',
-        auth: 'user.detail',
+        title: '九宫格',
       },
     },
 
@@ -36,23 +28,8 @@ export default {
       path: '/list/goods',
       lazy: () => import('@/views/list/goods'),
       meta: {
-        title: 'route.list.page2',
-        auth: 'user.read',
+        title: '老虎机',
       },
-      children: [
-        {
-          path: '/list/goods/detail',
-          lazy: () => import('@/views/list/goods/detail'),
-          meta: {
-            title: 'route.list.detail2',
-            hideInMenu: true,
-            hideInSearch: true,
-            activeMenu: '/list/goods',
-            mergeTabbarPath: '/list/goods',
-            auth: 'user.detail',
-          },
-        },
-      ],
     },
   ],
 

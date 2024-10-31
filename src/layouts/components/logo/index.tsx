@@ -27,7 +27,7 @@ export default function Logo(props: IProps) {
   return (
     <LogoWrapper to="/" title={title} className={`h-[var(--xt-logo-height)] flex flex-shrink-0 items-center justify-center px-2 ${className}`} $customLogoClass={customLogoClass()}>
       { showLogoImage && <Avatar src={<img src={url} />} /> }
-      { showLogoText && <span className="truncate font-bold">{title}</span> }
+      { showLogoText && <span className="text-#151111 font-bold">{title}</span> }
 
     </LogoWrapper>
   )

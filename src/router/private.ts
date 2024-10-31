@@ -1,20 +1,12 @@
 import type { IPrivateRoutes } from 'types/router'
 import type { RouteObject } from 'react-router-dom'
 import listRoutes from './modules/list'
-import componentRoutes from './modules/component'
-import layoutTwoRoutes from './modules/LayoutTwo'
-import multistepRoutes from './modules/multistep'
 
 export const privateRoutes: IPrivateRoutes[] = [
   {
     title: '演示',
     icon: 'ant-design:appstore-outlined',
-    children: [listRoutes, componentRoutes, multistepRoutes],
-  },
-  {
-    title: '系统设置',
-    icon: 'ant-design:setting-outlined',
-    children: [layoutTwoRoutes],
+    children: [listRoutes],
   },
 ]
 
