@@ -31,6 +31,13 @@ export default {
         title: '老虎机',
       },
     },
+    {
+      path: '/list/scroll',
+      lazy: () => import('@/views/list/scroll'),
+      meta: {
+        title: 'CSGO滚动抽奖',
+      },
+    },
   ],
 
 } as RouteObject
